@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Bootstrap Visualization Dashboard</title>
+
+    <!-- Boostrap Stylesheet -->
+    <link rel="stylesheet" href="Resources/assets/css/bootstrap.min.css" media="screen">
+
+    <!-- CSS stylesheet -->
+    <link rel="stylesheet" href="Resources/assets/css/styles.css" media="screen">
+
+  </head>
+
+  <body>
+    <!-- top navigation bar -->
+    <nav class="navbar navbar-default">
+      <div class="container-fluid navbar-custom">
+
+        <!-- divided navigation bar -->
+        <div class="row">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle Navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            <!--creat latitude button-->
+            </button>
+            <div class="col-xs-9 phone-nav">
+              <a class="navbar-brand" href="#" id="logo">Latitude</a>
+            </div>
+          </div>
+
+          <!-- links for the rest of the nav bar -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <!-- left side of the nav bar-->
+            <ul class="nav navbar-nav navbar-right navbar-right-custom">
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots <span class="caret"></span></a>
+                <!--creating drop down menu-->
+                <ul class="dropdown-menu">
+                  <!--Creating a list in the drop down menu-->
+                 <li><a href="add_pages/temp.html" target="_blank">Max Temperature</a></li>
+                  <li><a href="add_pages/humidity.html" target="_blank">Humidity</a></li>
+                  <li><a href="add_pages/cloudiness.html" target="_blank">Cloudiness</a></li>
+                  <li><a href="add_pages/wind.html" target="_blank">Wind Speed</a></li>
+                </ul>
+              </li>
+              <li><a href="add_pages/comparison.html" target="_blank">Comparison</a></li>
+              <li><a href="add_pages/data.html" target="_blank">Data</a></li>
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </div>
+      </div><!-- /.container-fluid -->
+    </nav>
+    <!-- End of navbar -->
+
+    <!-- Start of container -->
+    <div class="container">
+      <section class="row">
+        <div class="col-md-8">
+          <article class="description-content">
+            <h1 class="description-header">Summary: Latitude vs. X</h1>
+            <hr class="description-hr"/>
+            <img src="Resources/assets/images/Fig1.png" alt="" id="description-image"/>
+            <p>The purpose of this project was to analyze how weather changes as you get closer to the equator. To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities.</p>
+            <p>After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude. Factors we looked at included: temperature, cloudiness, wind speed, and humidity. This site provides the source data and visualizations created as part of the analysis, as well as explanations and descriptions of any trends and correlations witnessed.</p>
+          </article>
+        </div>
+        <div class="col-md-4">
+
+          <!-- Image -->
+          <section id="imageNav-area">
+            <div class="imageNav-content">
+              <h2 class="imageNav-header">Visualizations</h2>
+              <hr />
+              <div id="images">
+                <a href="add_pages/data.html"><img src="Resources/assets/images/Fig1.png" alt="Latitude vs. Max Temperature" class="imageNav-photo"></a>
+                <a href="add_pages/humidity.html"><img src="Resources/assets/images/Fig2.png" alt="Latitude vs. Humidity" class="imageNav-photo"></a>
+                <a href="add_pages/cloudiness.html"><img src="Resources/assets/images/Fig3.png" alt="Latitude vs. Cloudiness" class="imageNav-photo"></a>
+                <a href="add_pages/wind.html"><img src="Resources/assets/images/Fig4.png" alt="Latitude vs. Wind Speed" class="imageNav-photo"></a>
+              </div>
+            </div>
+          </section>
+          
+        </div>
+      </section>
+    </div>
+    <!-- End of container -->
+
+    <!-- Start of footer -->
+    <footer class="footer navbar-fixed-bottom">
+      <p class="text-muted text-muted-footer text-center">
+        <li><a href="add_pages/thank_you.html" target="_blank">Thank you!</a></li>
+      </p>
+  
+    </footer>
+    <!-- End of footer -->
+
+    <!-- jQuery CDN -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+
+    <!-- Bootstrap CDN -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  </body>
+
+</html>
